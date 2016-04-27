@@ -1,24 +1,30 @@
 [user]
-	name = Filip Sotirov
-	email = me@fipolab.com
+  name = Filip Sotirov
+  email = me@fipolab.com
 [core]
-	excludesfile = /Users/fipo/.gitignore_global
-	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = /Users/fipo/.gitignore_global
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [color "diff"]
-	whitespace = red reverse
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "log"]
+  author = green bold
 [alias]
-	st = status
-	ci = commit
-	br = branch
-	co = checkout
-	df = diff
-	lg = log -p
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	pr = pull --rebase
+  st = status
+  ci = commit --verbose
+  br = branch
+  co = checkout
+  cp = cherry-pick
+  df = diff
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [push]
-	default = simple
+  default = simple
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [rerere]
-	enabled = true
+  enabled = true
